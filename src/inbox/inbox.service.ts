@@ -30,7 +30,7 @@ export class InboxService {
 
     return {
       name: procedure.currentWfArea.name,
-      shortened: procedure.currentWfArea.Shortened,
+      shortened: procedure.currentWfArea.shortened,
     };
   }
 }

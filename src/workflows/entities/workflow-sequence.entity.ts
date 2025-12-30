@@ -13,9 +13,6 @@ export class WorkflowSequence {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ type: 'varchar', length: 100, nullable: false })
-  action: string;
-
   @ManyToOne(() => Workflow, (workflow) => workflow.sequences, { nullable: false })
   @JoinColumn({ name: 'workflow_id' })
   workflow: Workflow;

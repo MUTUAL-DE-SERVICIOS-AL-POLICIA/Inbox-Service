@@ -5,14 +5,14 @@ export class WorkflowArea {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ name: 'module_id', type: 'varchar', nullable: false })
-  moduleId: string;
+  @Column({ name: 'module_id', type: 'int', nullable: false })
+  moduleId: number;
 
   @Column({ name: 'name', type: 'varchar', length: 100, nullable: false })
   name: string;
 
   @Column({ name: 'shortened', type: 'varchar', length: 50, nullable: true })
-  Shortened: string;
+  shortened: string;
 
   @Column({ name: 'sequence_number', type: 'int', nullable: false })
   sequenceNumber: number;
